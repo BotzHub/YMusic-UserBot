@@ -1,8 +1,8 @@
 from pyrogram import Client
 from pytgcalls import PyTgCalls
 
-import config
 import platform
+import config
 from ..logging import LOGGER
 
 api_id: int = config.API_ID
