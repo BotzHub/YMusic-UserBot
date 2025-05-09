@@ -9,7 +9,12 @@ api_hash: str = config.API_HASH
 session_string: str = config.SESSION_STRING
 
 YMusicBot = Client(
-    name="YMusic", api_id=api_id, api_hash=api_hash, session_string=session_string
+    name="YMusic",
+    api_id=api_id,
+    api_hash=api_hash,
+    session_string=session_string,
+    device_model="YMusic Bot",  # Shows in active sessions
+    app_version="YMusic v1.0",  # Custom version tag
 )
 
 YMusicUser = PyTgCalls(YMusicBot)
